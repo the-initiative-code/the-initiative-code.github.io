@@ -11,14 +11,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/_data/images`,
+        path: `${__dirname}/src/_DATA/images`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `products`,
-        path: `${__dirname}/src/_data/works`,
+        path: `${__dirname}/src/_DATA/works`,
       },
     },
     'gatsby-transformer-sharp',
@@ -32,7 +32,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/_data/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/_DATA/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
     {
