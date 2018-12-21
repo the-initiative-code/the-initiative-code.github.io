@@ -1,0 +1,7 @@
+.header {
+  padding: 86px 162px 15px 162px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* border-bottom: 1px dashed red; */
+}
