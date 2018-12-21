@@ -1,21 +1,15 @@
+// main imports
 import React from 'react'
 
+// styles
+import styles from './Header.module.css'
+
+// components
 import Navbar from './Navbar'
 import Title from './Title'
 
-import styles from './Header.module.css'
-
-const headerStyle = {
-  height: '100%',
-  backgroundColor: '#021B2D',
-  color: '#1E2D24',
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'flex-end',
-}
-
 const Header = ({ selected }) => (
-  <div className={styles.header}>
+  <div className={styles.header + ' header-global'}>
     <Title />
     <Navbar selected={selected} />
   </div>

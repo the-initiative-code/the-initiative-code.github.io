@@ -1,0 +1,7 @@
+.header-global * {
+  transition: font-size 300ms;
+}
+
+.footer-global {
+  transition: padding 300ms, width 200ms;
+}

@@ -9,7 +9,7 @@ import { rhythm, scale } from '../../utils/typography'
 import { NavLink } from './Link'
 
 const Footer = () => (
-  <div className={styles.footer}>
+  <div className={styles.footer + ' footer-global'}>
     <div className={styles.footerBar}>
       Let us build your brand with you.
       <NavLink href="#" text="get started." />

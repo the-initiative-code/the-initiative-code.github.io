@@ -8,7 +8,8 @@
 
 .default {
   color: white;
-  font-size: 25px;
+  font-size: 1.5rem;
+  margin-top: 10px;
 }
 
 .default:hover {
@@ -17,7 +18,7 @@
 
 .header {
   color: black;
-  font-size: 20px;
+  font-size: 0.8rem;
 }
 
 .header:hover {
@@ -28,7 +29,7 @@
   color: white;
   background-color: black;
   padding: 5px 10px;
-  font-size: 20px;
+  font-size: 0.8rem;
 }
 
 .cta:hover {
@@ -42,4 +43,13 @@
 
 .secondary:hover {
   color: salmon;
+}
+
+@media (min-width: 362px) {
+  .header {
+    font-size: 1rem;
+  }
+  .cta {
+    font-size: 1rem;
+  }
 }
