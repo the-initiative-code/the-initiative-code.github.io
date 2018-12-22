@@ -24,9 +24,11 @@ const Layout = ({ children, current }) => (
     `}
     render={data => (
       <>
+      <div>
         <Header siteTitle={data.site.siteMetadata.title} selected={current} />
         <div className={styles.mainDiv}>{children}</div>
         <Footer height={170} />
+      </div>
       </>
     )}
   />
