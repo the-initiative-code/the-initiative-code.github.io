@@ -56,3 +56,38 @@
   .experience {
     margin: 0;
   }
+
+  /* Get Started */
+  .topic {
+    font-size: 1em;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+
+  .idealwebsite {
+    height: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #2f4f4f;
+  }
+
+  .getStarted {
+    width: 100px;
+    padding: 5px;
+    margin-top: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+  }
+  
+  .button {
+    color: red;
+    background-color: black;
+  }

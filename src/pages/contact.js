@@ -13,21 +13,17 @@ const PageTemplate = () => (
     <div className={style.frame}>
       <div>
         <h1>Contact</h1>
-        <h1>title</h1>
-        <h2>subtitle</h2>
-        <h3>subsubtitle</h3>
-        <h4>subsubsubtitle</h4>
-        <h5>subsubsubsubtitle</h5>
-        <h6>subsubsubsubsubtitle</h6>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <p className={style.topic}>Tell us your ideal website</p>
+        <div className={style.idealwebsite}>
+          <div>What are you selling?</div>
+          <div>Who are your target customers?</div>
+          <div>How do you want your customers to perceive your products?</div>
+        </div>
+        <div className={style.getStarted}>
+          <a href="https://images.pexels.com/photos/248370/pexels-photo-248370.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" target="_blank">
+            get started
+          </a>
+        </div>
 
         <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
           <Image />
