@@ -12,7 +12,6 @@ import ErrorPage from '../components/Error'
 const IndexPage = () => (
   <Layout current="home">
     <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
-
     <div className={style.frame}>
       <ErrorPage>
         <Link to="/all-files">
