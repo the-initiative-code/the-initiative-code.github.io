@@ -4,6 +4,23 @@
     padding: 2em;
 }
 
+/* Home */
+.Home{
+  display:flex;
+  justify-content:right;
+}
+
+.showcase {
+ 
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+.client {
+  text-align: right;
+  font-size: 1.2em;
+}
+
 /* Our Work */
 .companypage {
     width: 100%;
@@ -58,6 +75,8 @@
   }
 
   /* Get Started */
+
+  /*
   .topic {
     font-size: 1em;
     font-weight: bold;
@@ -73,6 +92,8 @@
     justify-content: space-around;
     color: #2f4f4f;
   }
+
+  */
 
   .getStarted {
     width: 100px;

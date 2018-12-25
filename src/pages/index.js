@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Home from './Home'
 import style from './style.module.css'
 
 import Layout from '../components/Layout'
@@ -13,6 +14,7 @@ const IndexPage = () => (
   <Layout current="home">
     <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
     <div className={style.frame}>
+    <Home/>
       <ErrorPage>
         <Link to="/all-files">
           <p>here, check out some files!</p>
