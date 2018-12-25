@@ -13,7 +13,9 @@ const PageTemplate = () => (
     <div className={style.frame}>
       <h1>Our prices</h1>
       <div>
-        <p><b>The services we provide :</b></p>
+        <p>
+          <b>The services we provide :</b>
+        </p>
         <p>
           Brand Design Consultation
           <br />
@@ -22,9 +24,13 @@ const PageTemplate = () => (
           <br />
           Website Hosting
         </p>
-        <p><b>For how much :</b></p>
+        <p>
+          <b>For how much :</b>
+        </p>
         <p>1000 USD</p>
-        <p><b>What will you get :</b></p>
+        <p>
+          <b>What will you get :</b>
+        </p>
         <p>
           Responsive Design
           <br />
@@ -34,10 +40,6 @@ const PageTemplate = () => (
           <br />
           Content Upload
         </p>
-      </div>
-
-      <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-        <Image />
       </div>
     </div>
   </Layout>

@@ -1,12 +1,8 @@
-.header{
-  border: 1px solid red;
-  background-color:red;
-  padding: 0% 5%;
+.header {
   max-width: 1200px;
 }
 
 .mainDiv {
-  padding: 0% 5%;
   max-width: 1200px;
 }
 

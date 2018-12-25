@@ -13,18 +13,17 @@ const PageTemplate = () => (
 
     <div className={style.frame}>
       <div>
-        <h1>Contact</h1>        
+        <h1>Contact</h1>
         <p className={style.topic}>Tell us your ideal website</p>
-        <Form/>
+        <Form />
 
         <div className={style.getStarted}>
-          <a href="https://images.pexels.com/photos/248370/pexels-photo-248370.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" target="_blank">
+          <a
+            href="https://images.pexels.com/photos/248370/pexels-photo-248370.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            target="_blank"
+          >
             get started
           </a>
-        </div>
-
-        <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-          <Image />
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ import styles from './Title.module.css'
 
 const DefaultTitle = () => (
   <div className={styles.default}>
-    <Link to="/" style={{ textDecoration: 'none' }}>
+    <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>
       <h1 className={styles.titleFont}>THE INITIATIVE</h1>
     </Link>
   </div>

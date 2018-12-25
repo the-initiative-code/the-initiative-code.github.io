@@ -8,13 +8,13 @@ import SEO from '../components/SEO'
 
 const User = props => (
   <div className={style.user}>
-      <img src={props.face} className={style.face} alt=""/>
-      <div className={style.description}>
-          <h3 className={style.name}>{props.name}</h3>
-          <p className={style.experience}>{props.experience}</p>
-      </div>
+    <img src={props.face} className={style.face} alt="" />
+    <div className={style.description}>
+      <h3 className={style.name}>{props.name}</h3>
+      <p className={style.experience}>{props.experience}</p>
+    </div>
   </div>
-      )
+)
 
 const PageTemplate = () => (
   <Layout current="/about">
@@ -25,19 +25,15 @@ const PageTemplate = () => (
     <div className={style.frame}>
       <h1>Who We Are</h1>
       <User
-name="Joseph Langdon"
-face="https://randomuser.me/api/portraits/men/17.jpg"
-experience="<description>"
-	/>
-	<User
-name="Brandon Clide"
-face="https://randomuser.me/api/portraits/men/32.jpg"
-experience="<description>"
-	/>
-
-      <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-        <Image />
-      </div>
+        name="Joseph Langdon"
+        face="https://randomuser.me/api/portraits/men/17.jpg"
+        experience="<description>"
+      />
+      <User
+        name="Brandon Clide"
+        face="https://randomuser.me/api/portraits/men/32.jpg"
+        experience="<description>"
+      />
     </div>
   </Layout>
 )
