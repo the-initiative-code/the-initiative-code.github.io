@@ -11,7 +11,7 @@ const Showcase = props => (
 export default class Home extends React.Component {
   render() {
     return (
-      <div className={style.Home}>
+      <div className={style.home}>
         <Showcase
           showcase="https://images.pexels.com/photos/210182/pexels-photo-210182.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000"
           client="The Borring Company, 2018"

@@ -9,9 +9,8 @@ import TextField from "@material-ui/core/TextField";
 
 const theme = createMuiTheme({
   typography: {
-    // Tell Material-UI what the font-size on the html element is.
-    fontSize: 20,
-    fontFamily: "Arial",
+    // fontSize: 20,
+    // fontFamily: "Arial",
     useNextVariants: true
   }
 });

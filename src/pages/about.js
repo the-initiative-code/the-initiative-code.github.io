@@ -10,7 +10,7 @@ const User = props => (
   <div className={style.user}>
       <img src={props.face} className={style.face} alt=""/>
       <div className={style.description}>
-          <h2 className={style.name}>{props.name}</h2>
+          <h3 className={style.name}>{props.name}</h3>
           <p className={style.experience}>{props.experience}</p>
       </div>
   </div>

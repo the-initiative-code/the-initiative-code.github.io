@@ -5,14 +5,15 @@
 }
 
 /* Home */
-.Home{
+.home {
   display:flex;
-  justify-content:right;
+  flex-direction:column;
+  align-items:center;
 }
 
 .showcase {
- 
-  max-height: 80vh;
+  max-height: 60vh;
+  width:100%;
   object-fit: cover;
 }
 
@@ -22,20 +23,18 @@
 }
 
 /* Our Work */
-.companypage {
+  .companypage {
     width: 100%;
   }
   
   .companyname {
     font-size: 1em;
-    font-family: sans-serif;
     float: right;
     color: darkgrey;
   }
   
   .companydescription {
     font-size: 1em;
-    font-family: sans-serif;
     color: #484848;
   }
   
@@ -50,8 +49,6 @@
     margin-bottom: 0;
   }
   
-  
-  
   .description {
     flex: 1;
     margin-left: 18px;
@@ -65,8 +62,7 @@
 
   .face {
     flex: 0 0 96px;
-    width: 96px;
-    height: 96px;
+    height: 130px;
     margin: 0;
   }
   
@@ -75,25 +71,6 @@
   }
 
   /* Get Started */
-
-  /*
-  .topic {
-    font-size: 1em;
-    font-weight: bold;
-    font-family: sans-serif;
-  }
-
-  .idealwebsite {
-    height: 200px;
-    border: 1px solid black;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    color: #2f4f4f;
-  }
-
-  */
 
   .getStarted {
     width: 100px;
