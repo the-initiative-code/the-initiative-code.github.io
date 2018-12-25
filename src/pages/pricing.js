@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import style from './style.module.css'
 
 import Layout from '../components/Layout'
 import Image from '../components/Image'
@@ -9,26 +10,36 @@ const PageTemplate = () => (
   <Layout current="/pricing">
     <SEO title="pricing" keywords={['prices', 'pricing', 'package']} />
 
-    <div style={{ border: '1px dashed lightgrey' }}>
+    <div className={style.frame}>
       <h1>Our prices</h1>
-      <h1>title</h1>
-      <h2>subtitle</h2>
-      <h3>subsubtitle</h3>
-      <h4>subsubsubtitle</h4>
-      <h5>subsubsubsubtitle</h5>
-      <h6>subsubsubsubsubtitle</h6>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
-
-      <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-        <Image />
+      <div>
+        <p>
+          <b>The services we provide :</b>
+        </p>
+        <p>
+          Brand Design Consultation
+          <br />
+          Static Website Design + 2 iterations *extra changes possible upon
+          request, and will incur additional cost.
+          <br />
+          Website Hosting
+        </p>
+        <p>
+          <b>For how much :</b>
+        </p>
+        <p>1000 USD</p>
+        <p>
+          <b>What will you get :</b>
+        </p>
+        <p>
+          Responsive Design
+          <br />
+          2 Pages *additional pages based on discussion. Prices may vary.
+          <br />
+          Design Customization
+          <br />
+          Content Upload
+        </p>
       </div>
     </div>
   </Layout>
