@@ -2,7 +2,7 @@
   padding: 0 20px;
 }
 
-@media (min-width: 1210px) {
+@media (min-width: 1110px) {
   .frame {
     padding: 0;
   }

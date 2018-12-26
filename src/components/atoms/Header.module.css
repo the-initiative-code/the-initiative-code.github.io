@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  margin: 3rem auto 10px auto;
+  margin: 3rem auto 20px auto;
   max-width: 1200px;
   /* padding: 86px 0 15px 0; */
   display: block;
@@ -9,7 +9,7 @@
   /* border-bottom: 1px dashed red; */
 }
 
-@media (min-width: 800px) {
+@media (min-width: 920px) {
   .header {
     display: flex;
   }

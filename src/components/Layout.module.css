@@ -1,13 +1,13 @@
-.header {
-  max-width: 1200px;
-}
-
 .mainDiv {
-  max-width: 1200px;
+  max-width: 1100px;
 }
 
 @media (min-width: 800px) {
   .mainDiv {
+    margin: 3rem auto 0;
+  }
+
+  .innerDiv {
     margin: 3rem auto;
   }
 }
