@@ -3,12 +3,12 @@ import React, { Fragment } from 'react'
 
 // styles
 import style from './index.module.css'
-import './style.module.css'
 
 // components
 import Layout from '../components/Layout'
 import Image from '../components/Image'
 import SEO from '../components/SEO'
+import Hero from '../components/atoms/Hero'
 
 import ErrorPage from '../components/Error'
 
@@ -23,6 +23,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className={style.home}>
+        <Hero />
         <Showcase
           showcase="https://images.pexels.com/photos/210182/pexels-photo-210182.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000"
           client="The Borring Company, 2018"

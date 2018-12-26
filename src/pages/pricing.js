@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import style from './style.module.css'
+
+import style from './pricing.module.css'
 
 import Layout from '../components/Layout'
 import Image from '../components/Image'

@@ -5,3 +5,7 @@
 .footer-global {
   transition: padding 300ms, width 200ms;
 }
+
+.color-animation {
+  transition: color 500ms ease-out;
+}
