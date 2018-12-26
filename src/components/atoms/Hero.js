@@ -8,11 +8,15 @@ import styles from './Hero.module.css'
 
 const HeroText = () => (
   <div className={styles.default}>
-    <code>hero text here, use absolute positioning</code>
-    <code>
-      in the future, I plan to animate the text based on the content behind
-    </code>
-    <code>content scroll behind, front text animates typewriter style</code>
+    <div className={styles.text}>
+      <h1>we do digital branding.</h1>
+      <h2>we work with you to bring your digital presence to life.</h2>
+      {/* <code>hero text here, use absolute positioning</code>
+      <code>
+        in the future, I plan to animate the text based on the content behind
+      </code>
+      <code>content scroll behind, front text animates typewriter style</code> */}
+    </div>
   </div>
 )
 
