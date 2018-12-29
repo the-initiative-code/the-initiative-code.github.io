@@ -7,6 +7,14 @@
   justify-content: space-between;
   align-items: flex-end;
   /* border-bottom: 1px dashed red; */
+<<<<<<< HEAD
+=======
+  /* sticky feature */
+  position:sticky;
+  top:0;
+  background-color:white;
+  z-index:99;
+>>>>>>> matt
 }
 
 @media (min-width: 920px) {
