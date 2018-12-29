@@ -9,9 +9,11 @@ import Navbar from './Navbar'
 import Title from './Title'
 
 const Header = ({ selected }) => (
-  <div className={styles.header + ' header-global'}>
-    <Title />
-    <Navbar selected={selected} />
+  <div className={styles.headerDiv + ' header-global'}>
+    <div className={styles.Header}>
+      <Title />
+      <Navbar selected={selected} />
+    </div>
   </div>
 )
 

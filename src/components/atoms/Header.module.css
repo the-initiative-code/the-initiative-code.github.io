@@ -1,20 +1,22 @@
-.header {
+.headerDiv {
   width: 100%;
-  margin: 3rem auto 20px auto;
-  max-width: 1200px;
-  /* padding: 86px 0 15px 0; */
+
+  /* sticky feature */
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 99;
+  padding-bottom: 10px;
+}
+
+.header {
+  margin: 3rem auto 0 auto;
+  max-width: 1100px;
+
   display: block;
   justify-content: space-between;
   align-items: flex-end;
-  /* border-bottom: 1px dashed red; */
-<<<<<<< HEAD
-=======
-  /* sticky feature */
-  position:sticky;
-  top:0;
-  background-color:white;
-  z-index:99;
->>>>>>> matt
+  width: 100%;
 }
 
 @media (min-width: 920px) {

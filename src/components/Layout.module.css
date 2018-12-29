@@ -1,13 +1,28 @@
+.mainBody {
+  padding: 0 0;
+}
+
 .mainDiv {
   max-width: 1100px;
+  margin: 2rem auto 0 auto;
 }
 
 @media (min-width: 800px) {
+  .mainBody {
+    padding: 0 8%;
+  }
   .mainDiv {
-    margin: 3rem auto 0;
+    /* max-width: 800px;
+    margin: 2rem auto 0; */
   }
 
   .innerDiv {
-    margin: 3rem auto;
+    margin: 2rem auto;
   }
 }
+
+/* @media (min-width: 1300px) {
+  .mainDiv {
+    max-width: 1100px;
+  }
+} */

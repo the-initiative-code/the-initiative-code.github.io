@@ -134,9 +134,11 @@ class OutlinedTextFields extends React.Component {
           />
         </MuiThemeProvider>
 
-        <button className={style.submit + ' color-animation'}>
-          contact us
-        </button>
+        <div className={style.submitDiv}>
+          <button className={style.submit + ' color-animation'}>
+            contact us
+          </button>
+        </div>
       </form>
     )
   }

@@ -3,9 +3,13 @@
   margin-bottom: 5rem;
 }
 
+.frame h1,
+p {
+  margin-left: 8px;
+}
+
 @media (min-width: 1110px) {
   .frame {
     padding: 0;
   }
 }
-

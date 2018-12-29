@@ -24,10 +24,12 @@ const Layout = ({ children, current }) => (
     `}
     render={data => (
       <>
-        <div className={styles.mainDiv}>
-          <Header siteTitle={data.site.siteMetadata.title} selected={current} />
-          <div className={styles.innerDiv}>{children}</div>
-          <Footer height={170} selected={current} />
+        <Header siteTitle={data.site.siteMetadata.title} selected={current} />
+        <div className={styles.mainBody}>
+          <div className={styles.mainDiv}>
+            <div className={styles.innerDiv}>{children}</div>
+            <Footer height={170} selected={current} />
+          </div>
         </div>
       </>
     )}

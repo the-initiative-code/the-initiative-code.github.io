@@ -9,7 +9,7 @@ import styles from './Hero.module.css'
 const HeroText = () => (
   <div className={styles.default}>
     <div className={styles.text}>
-      <h1>we do digital branding.</h1>
+      <h1>let us build your digital brand with you.</h1>
       <h2>we work with you to bring your digital presence to life.</h2>
       {/* <code>hero text here, use absolute positioning</code>
       <code>
