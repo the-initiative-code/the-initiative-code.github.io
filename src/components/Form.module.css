@@ -1,0 +1,23 @@
+/* Get Started */
+
+.submit {
+  width: 100px;
+  padding: 5px;
+  margin-top: 10px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+}
+
+.submit:hover {
+  color: red;
+}
+
+.button {
+  color: red;
+  background-color: black;
+}

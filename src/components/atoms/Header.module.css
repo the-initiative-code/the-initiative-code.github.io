@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  margin: 3rem auto 20px auto;
+  max-width: 1200px;
+  /* padding: 86px 0 15px 0; */
+  display: block;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* border-bottom: 1px dashed red; */
+  /* sticky feature */
+  position:sticky;
+  top:0;
+  background-color:white;
+  z-index:99;
+}
+
+@media (min-width: 920px) {
+  .header {
+    display: flex;
+  }
+}

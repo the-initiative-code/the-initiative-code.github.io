@@ -1,0 +1,11 @@
+.frame {
+  padding: 0 20px;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 1110px) {
+  .frame {
+    padding: 0;
+  }
+}
+

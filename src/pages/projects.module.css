@@ -1,0 +1,40 @@
+.frame {
+  padding: 0 20px;
+}
+
+@media (min-width: 1110px) {
+  .frame {
+    padding: 0;
+  }
+}
+
+/* Our Work */
+.companypage {
+  width: 100%;
+  margin: 0;
+}
+
+.companyname {
+  font-size: 1em;
+  float: right;
+  color: darkgrey;
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 600px) {
+  .companyname {
+    margin: 0.5rem 0 3rem 0;
+  }
+}
+
+.companydescription {
+  font-size: 1em;
+  color: #484848;
+}
+
+.descriptionDiv {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 0 2rem 0;
+}
