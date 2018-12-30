@@ -10,7 +10,7 @@ import Title from './Title'
 
 const Header = ({ selected }) => (
   <div className={styles.headerDiv + ' header-global'}>
-    <div className={styles.Header}>
+    <div className={styles.header}>
       <Title />
       <Navbar selected={selected} />
     </div>
