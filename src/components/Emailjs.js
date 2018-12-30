@@ -16,7 +16,7 @@ const template_params = {
   description: 'description_value',
 }
 
-export const sendEmail = ({ data, user = 'panzerstadt' }) => {
+export const sendEmail = async ({ data, user = 'panzerstadt' }) => {
   const users = {
     panzerstadt: {
       serviceID: panzerstadtID.service_id,
@@ -33,16 +33,18 @@ export const sendEmail = ({ data, user = 'panzerstadt' }) => {
       ? templateID.template_id_panzerstadt
       : templateID.template_id_mayojich
 
-  emailjs
-    .send('default_service', template, data, users.panzerstadt.userID)
-    .then(
-      response => {
-        console.log('SUCCESS!', response.status, response.text)
-        return true
-      },
-      err => {
-        console.log('FAILED...', err)
-        return false
-      }
-    )
+  return new Promise(resolve => {
+    emailjs
+      .send('default_service', template, data, users.panzerstadt.userID)
+      .then(
+        response => {
+          console.log('SUCCESS!', response.status, response.text)
+          resolve(true)
+        },
+        err => {
+          console.log('FAILED...', err)
+          resolve(false)
+        }
+      )
+  })
 }

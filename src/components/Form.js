@@ -51,6 +51,9 @@ class OutlinedTextFields extends React.Component {
     e.preventDefault()
     const sendCheck = await sendEmail({ data: this.state, user: 'panzerstadt' })
     const sendCheck2 = await sendEmail({ data: this.state, user: 'mayojich' })
+    console.log('sendcheck')
+    console.log(sendCheck)
+
     if (sendCheck && sendCheck2) {
       alert('Thank you for contacting us! We will get back to you shortly.')
       this.props.onSubmit(this.state)
@@ -136,9 +139,11 @@ class OutlinedTextFields extends React.Component {
           />
         </MuiThemeProvider>
 
-        <button className={style.submit + ' color-animation'}>
-          contact us
-        </button>
+        <div className={style.submitDiv}>
+          <button className={style.submit + ' color-animation'}>
+            contact us
+          </button>
+        </div>
       </form>
     )
   }

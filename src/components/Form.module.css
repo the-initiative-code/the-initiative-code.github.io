@@ -1,12 +1,21 @@
 /* Get Started */
 
+.submitDiv {
+  width: 100%;
+  margin-right: 8px;
+}
+
 .submit {
-  width: 100px;
+  outline: none;
+  border: none;
+  width: 120px;
   padding: 5px;
   margin-top: 10px;
   color: white;
   background-color: black;
-  border-radius: 5px;
+  font-weight: 700;
+  border: 1px solid black;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +23,8 @@
 }
 
 .submit:hover {
-  color: red;
+  background-color: #a5ffd6;
+  color: #393d3f;
 }
 
 .button {
