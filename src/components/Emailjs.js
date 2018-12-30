@@ -5,7 +5,7 @@ import { templateID } from '../utils/serviceID'
 
 // account IDs
 // panzerstadt
-import { panzerstadtID } from '../utils/serviceID'
+import { panzerstadtID, mayojichID } from '../utils/serviceID'
 // majojich
 
 const template_params = {
@@ -23,13 +23,18 @@ export const sendEmail = ({ data, user = 'panzerstadt' }) => {
       userID: panzerstadtID.user_id,
     },
     mayojich: {
-      serviceID: '',
-      userID: '',
+      serviceID: mayojichID.service_id,
+      userID: mayojichID.user_id,
     },
   }
 
+  const template =
+    user === 'panzerstadt'
+      ? templateID.template_id_panzerstadt
+      : templateID.template_id_mayojich
+
   emailjs
-    .send('default_service', templateID.template_id, data, users[user].userID)
+    .send('default_service', template, data, users.panzerstadt.userID)
     .then(
       response => {
         console.log('SUCCESS!', response.status, response.text)
