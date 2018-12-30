@@ -50,7 +50,12 @@ class OutlinedTextFields extends React.Component {
   async onSubmit(e) {
     e.preventDefault()
     const sendCheck = await sendEmail({ data: this.state, user: 'panzerstadt' })
-    if (sendCheck) {
+    const sendCheck2 = await sendEmail({ data: this.state, user: 'mayojich' })
+    console.log('sendcheck')
+    console.log(sendCheck)
+
+    if (sendCheck && sendCheck2) {
+      alert('Thank you for contacting us! We will get back to you shortly.')
       this.props.onSubmit(this.state)
     } else {
       console.log('there is an error')

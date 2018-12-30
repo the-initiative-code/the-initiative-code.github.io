@@ -5,6 +5,12 @@ export const panzerstadtID = {
   service_id: 'gmail-the-initiative',
 }
 
+export const mayojichID = {
+  user_id: 'user_qkMjHI8FGZr0puFdiBZYS',
+  service_id: 'matthewyong',
+}
+
 export const templateID = {
-  template_id: 'the-initiative-website',
+  template_id_panzerstadt: 'the-initiative-panzerstadt',
+  template_id_mayojich: 'the-initiative-mayojich',
 }

@@ -5,7 +5,7 @@ import { templateID } from '../utils/serviceID'
 
 // account IDs
 // panzerstadt
-import { panzerstadtID } from '../utils/serviceID'
+import { panzerstadtID, mayojichID } from '../utils/serviceID'
 // majojich
 
 const template_params = {
@@ -16,28 +16,35 @@ const template_params = {
   description: 'description_value',
 }
 
-export const sendEmail = ({ data, user = 'panzerstadt' }) => {
+export const sendEmail = async ({ data, user = 'panzerstadt' }) => {
   const users = {
     panzerstadt: {
       serviceID: panzerstadtID.service_id,
       userID: panzerstadtID.user_id,
     },
     mayojich: {
-      serviceID: '',
-      userID: '',
+      serviceID: mayojichID.service_id,
+      userID: mayojichID.user_id,
     },
   }
 
-  emailjs
-    .send('default_service', templateID.template_id, data, users[user].userID)
-    .then(
-      response => {
-        console.log('SUCCESS!', response.status, response.text)
-        return true
-      },
-      err => {
-        console.log('FAILED...', err)
-        return false
-      }
-    )
+  const template =
+    user === 'panzerstadt'
+      ? templateID.template_id_panzerstadt
+      : templateID.template_id_mayojich
+
+  return new Promise(resolve => {
+    emailjs
+      .send('default_service', template, data, users.panzerstadt.userID)
+      .then(
+        response => {
+          console.log('SUCCESS!', response.status, response.text)
+          resolve(true)
+        },
+        err => {
+          console.log('FAILED...', err)
+          resolve(false)
+        }
+      )
+  })
 }
