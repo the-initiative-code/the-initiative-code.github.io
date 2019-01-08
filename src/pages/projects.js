@@ -98,19 +98,19 @@ export const fluidImage = graphql`
 export const pageQuery = graphql`
   query {
     hourtrip: file(relativePath: { eq: "ourwork/hourtripcut.png" }) {
-      ...showcaseImage
+      ...fluidImage
     }
     intransit: file(relativePath: { eq: "ourwork/intransitcut.png" }) {
-      ...showcaseImage
+      ...fluidImage
     }
     searchbarjs: file(relativePath: { eq: "ourwork/searchbarjs.png" }) {
-      ...showcaseImage
+      ...fluidImage
     }
     prng: file(relativePath: { eq: "ourwork/prng.png" }) {
-      ...showcaseImage
+      ...fluidImage
     }
     nest: file(relativePath: { eq: "ourwork/the-nest.png" }) {
-      ...showcaseImage
+      ...fluidImage
     }
   }
 `
