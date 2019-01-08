@@ -2,15 +2,18 @@
   padding: 0 20px;
 }
 
-@media (min-width: 1110px) {
+@media (min-width: 600px) {
   .frame {
     padding: 0;
   }
 }
 
+.pageTitle {
+  letter-spacing: 0.1rem;
+}
+
 /* Our Work */
 .companypage {
-  width: 100%;
   margin: 0;
 }
 
@@ -21,20 +24,12 @@
   margin: 0.5rem 0;
 }
 
-@media (min-width: 600px) {
-  .companyname {
-    margin: 0.5rem 0 3rem 0;
-  }
+/* format the containers */
+.imgContainer {
+  overflow: hidden;
+  box-shadow: 0 3px 10px #0000001a;
 }
 
-.companydescription {
-  font-size: 1em;
-  color: #484848;
-}
-
-.descriptionDiv {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 0 0 2rem 0;
+.imgText {
+  padding: 0px 5px 20px 0px;
 }

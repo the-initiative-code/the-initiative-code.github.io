@@ -1,28 +1,47 @@
 .mainBody {
-  padding: 0 20px;
+  padding: 0;
 }
 
 .mainDiv {
-  max-width: 1100px;
-  margin: 2rem auto 0 auto;
+  max-width: 1200px;
+
+  /* the white space below the header */
+  margin-top: 1rem;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (min-width: 800px) {
+.homepageFrame {
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+@media (min-width: 600px) {
   .mainBody {
-    padding: 0 8%;
+    /* padding: 0 8%; */
   }
   .mainDiv {
     /* max-width: 800px;
     margin: 2rem auto 0; */
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .homepageFrame {
+    margin-left: 40px;
+    /* redundant. still deciding whether or not to make homepage full bleed */
   }
 
   .innerDiv {
-    margin: 2rem auto;
+    /* margin: 2rem auto; */
   }
 }
 
-/* @media (min-width: 1300px) {
+@media (min-width: 1300px) {
   .mainDiv {
-    max-width: 1100px;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
-} */
+}

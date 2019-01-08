@@ -1,10 +1,8 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import style from './pricing.module.css'
 
 import Layout from '../components/Layout'
-import Image from '../components/Image'
 import SEO from '../components/SEO'
 
 const PageTemplate = () => (
@@ -12,34 +10,46 @@ const PageTemplate = () => (
     <SEO title="pricing" keywords={['prices', 'pricing', 'package']} />
 
     <div className={style.frame}>
-      <h1>Our prices</h1>
+      <h1 className={style.pageTitle}>Our prices</h1>
+      <br />
       <div>
-        <p>
-          <b>The services we provide :</b>
-        </p>
+        <h5>The services we provide :</h5>
         <p>
           Brand Design Consultation
           <br />
-          Static Website Design + 2 iterations *extra changes possible upon
-          request, and will incur additional cost.
-          <br />
           Website Hosting
-        </p>
-        <p>
-          <b>For how much :</b>
-        </p>
-        <p>1000 USD</p>
-        <p>
-          <b>What will you get :</b>
-        </p>
-        <p>
-          Responsive Design
           <br />
-          2 Pages *additional pages based on discussion. Prices may vary.
+          Static<sup className="text-highlight">#</sup> Website Design + 2
+          Iterations<span className="text-highlight">*</span>
+        </p>
+        <br />
+        <h5>For how much :</h5>
+        <p>
+          100 USD<span className="text-highlight">*</span>
+        </p>
+        <br />
+        <h5>What will you get :</h5>
+        <p>
+          2 page static website<sup className="text-highlight">#</sup>
           <br />
-          Design Customization
+          Mobile/Tablet friendly Responsive Design
           <br />
-          Content Upload
+          Custom website design
+          <br />
+        </p>
+        <br />
+        <p>
+          <strong className="text-highlight">*</strong>
+          <i>
+            <small> Prices may vary with additional features</small>
+          </i>
+          <br />
+          <strong>
+            <sup className="text-highlight">#</sup>
+          </strong>
+          <i>
+            <small> Feature-rich websites available upon request</small>
+          </i>
         </p>
       </div>
     </div>

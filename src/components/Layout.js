@@ -22,17 +22,22 @@ const Layout = ({ children, current }) => (
         }
       }
     `}
-    render={data => (
-      <>
-        <Header siteTitle={data.site.siteMetadata.title} selected={current} />
-        <div className={styles.mainBody}>
-          <div className={styles.mainDiv}>
-            <div className={styles.innerDiv}>{children}</div>
-            <Footer height={170} selected={current} />
+    render={data => {
+      let frameStyle = styles.mainDiv + ' '
+      if (current === 'home') frameStyle = frameStyle + styles.homepageFrame
+
+      return (
+        <>
+          <Header siteTitle={data.site.siteMetadata.title} selected={current} />
+          <div className={styles.mainBody}>
+            <div className={frameStyle}>
+              <div className={styles.innerDiv}>{children}</div>
+              <Footer height={170} selected={current} />
+            </div>
           </div>
-        </div>
-      </>
-    )}
+        </>
+      )
+    }}
   />
 )
 

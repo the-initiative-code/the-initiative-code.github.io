@@ -9,3 +9,26 @@
 .color-animation {
   transition: color 500ms ease-out;
 }
+
+.text-shadow-animation {
+  transition: text-shadow 700ms ease-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.text-highlight {
+  text-shadow: 0px 2px 1px #6dffbd;
+  margin-left: 2px;
+}
+
+::selection {
+  background: #ffea97; /* WebKit/Blink Browsers */
+  color: #ee3e6a;
+}
+::-moz-selection {
+  background: #ffea97; /* Gecko Browsers */
+  color: #ee3e6a;
+}

@@ -1,42 +1,67 @@
 .frame {
   padding: 0 20px;
-  margin-bottom: 5rem;
 }
 
-@media (min-width: 1110px) {
+.frame p {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 600px) {
   .frame {
     padding: 0;
   }
 }
 
-/* Who We Are */
-.user {
-  display: flex;
-  align-items: center;
-  margin: 0 auto 12px auto;
+.pageTitle {
+  letter-spacing: 0.1rem;
 }
 
-.user:last-child {
-  margin-bottom: 0;
-}
-
-.description {
-  flex: 1;
-  margin-left: 18px;
-  padding: 12px;
+/* Our Work */
+.face {
+  padding: 0px 5px 20px 0px;
 }
 
 .name {
-  margin: 0 0 12px 0;
-  padding: 0;
-}
-
-.face {
-  flex: 0 0 96px;
-  height: 130px;
-  margin: 0;
 }
 
 .experience {
-  margin: 0;
+  padding: 0px 5px 60px 0px;
+}
+
+.descriptionDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 2rem auto;
+}
+
+.individual {
+  min-height: 0;
+}
+
+@media (min-width: 573px) {
+  .experience {
+    max-width: 500px;
+  }
+
+  .individual {
+    display: flex;
+
+    align-items: center;
+    margin: 5rem auto;
+  }
+
+  .descriptionDiv {
+    flex-direction: row;
+  }
+
+  .description {
+    width: 43%;
+  }
 }

@@ -1,6 +1,6 @@
 // main imports
 import React from 'react'
-import { Link } from 'gatsby'
+import { graphql } from 'gatsby'
 
 // styles
 import style from './projects.module.css'
@@ -8,22 +8,31 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 // components
 import Layout from '../components/Layout'
-import Image from '../components/Image'
 import SEO from '../components/SEO'
+import Img from 'gatsby-image'
 
 const Display = props => (
-  <div className="row">
-    <div className="col-sm-6">
-      <img src={props.companypage} className={style.companypage} />
-      <p className={style.companyname}>{props.companyname}</p>
+  <div className="row" style={{ margin: 0 }}>
+    <div className="col-sm-6" style={{ padding: '20px 0 0 0', margin: 0 }}>
+      <a href={props.link} target="_blank">
+        <div className={style.companypage + ' ' + style.imgContainer}>
+          {props.companypage}
+        </div>
+      </a>
+      <a className={style.companyname}>{props.companyname}</a>
     </div>
-    <div className={'col-sm-6 ' + style.descriptionDiv}>
-      <p className={style.companydescription}>{props.companydescription}</p>
+    <div
+      className={'col-sm-6 ' + style.descriptionDiv}
+      style={{ padding: '70px 20px 0 20px', margin: 0 }}
+    >
+      <p className={style.companydescription + ' ' + style.imgText}>
+        {props.companydescription}
+      </p>
     </div>
   </div>
 )
 
-const PageTemplate = () => (
+const PageTemplate = props => (
   <Layout current="/projects">
     <SEO
       title="portfolio"
@@ -31,29 +40,77 @@ const PageTemplate = () => (
     />
 
     <div className={style.frame}>
-      <h1>Our work</h1>
+      <h1 className={style.pageTitle}>Our work</h1>
+
       <Display
-        companypage="https://images.pexels.com/photos/210182/pexels-photo-210182.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000"
-        companyname="The Borring Company, 2018"
-        companydescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+        companypage={<Img fluid={props.data.hourtrip.childImageSharp.fluid} />}
+        companyname="HourTrip, 2019"
+        companydescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        "
+        link="https://playground-panzerstadt.now.sh/"
       />
       <Display
-        companypage="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000"
-        companyname="Goggle, 2018"
+        companypage={<Img fluid={props.data.intransit.childImageSharp.fluid} />}
+        companyname="InTransit, 2019"
         companydescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+        link="https://playground-panzerstadt.now.sh/"
       />
       <Display
-        companypage="https://images.pexels.com/photos/1117132/pexels-photo-1117132.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000"
-        companyname="Warning Brothers, 2018"
+        companypage={
+          <Img fluid={props.data.searchbarjs.childImageSharp.fluid} />
+        }
+        companyname="Searchbar.js, 2018"
         companydescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+        link="https://playground-panzerstadt.now.sh/"
       />
       <Display
-        companypage="https://images.pexels.com/photos/507410/pexels-photo-507410.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000"
-        companyname="The Borring Company, 2018"
-        companydescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        companypage={<Img fluid={props.data.prng.childImageSharp.fluid} />}
+        companyname="Pseudo Random Nonsense Generator, 2018"
+        companydescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+        link="https://playground-panzerstadt.now.sh/"
+      />
+      <Display
+        companypage={<Img fluid={props.data.nest.childImageSharp.fluid} />}
+        companyname="The Nest, 2018"
+        companydescription="Prototype design for a co-working startup, focusing on amenities and types of services offered. The webpage was designed for simplicity and the right amount of information at a glance.
+        "
+        link="https://mayojich.github.io/the-nest/"
       />
     </div>
   </Layout>
 )
 
 export default PageTemplate
+
+{
+  /* The code below queries images using gatsby-images */
+}
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxHeight: 500) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`
+
+export const pageQuery = graphql`
+  query {
+    hourtrip: file(relativePath: { eq: "ourwork/hourtripcut.png" }) {
+      ...showcaseImage
+    }
+    intransit: file(relativePath: { eq: "ourwork/intransitcut.png" }) {
+      ...showcaseImage
+    }
+    searchbarjs: file(relativePath: { eq: "ourwork/searchbarjs.png" }) {
+      ...showcaseImage
+    }
+    prng: file(relativePath: { eq: "ourwork/prng.png" }) {
+      ...showcaseImage
+    }
+    nest: file(relativePath: { eq: "ourwork/the-nest.png" }) {
+      ...showcaseImage
+    }
+  }
+`
