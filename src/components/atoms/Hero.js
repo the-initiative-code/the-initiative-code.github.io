@@ -64,10 +64,10 @@ const HeroText = () => (
           style={{ fontWeight: 600, fontSize: '1em' }}
         />{' '}
         website experiences, while you want them to understand your brand and
-        the value you bring to their lives.{' '}
+        the value you bring to their lives. This is where we come in.{' '}
         <NavLink
           href="/about"
-          text="This is where we come in."
+          text="Check out some of our works."
           type="header"
           selected="/about"
           style={{ fontWeight: 600, fontSize: '1em' }}
