@@ -56,6 +56,16 @@ h3 {
   .text .h3 {
     display: none;
   }
+  .text .break {
+    display: none;
+  }
+}
+
+/* turn off hero text  when landscape */
+@media (max-height: 400px) {
+  .text {
+    display: none;
+  }
 }
 
 @media (min-width: 600px) {
