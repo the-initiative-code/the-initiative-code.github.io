@@ -1,5 +1,5 @@
 module.exports = {
-  //pathPrefix: '/the-initiative',
+  pathPrefix: '/the-initiative',
   siteMetadata: {
     title: 'The Initiative',
     description: 'we bring your brand to life.',

@@ -3,6 +3,16 @@
   z-index: 100;
 }
 
+.break {
+  height: 1em;
+}
+
+@media (min-width: 600px) {
+  .break {
+    height: 3em;
+  }
+}
+
 .text {
   position: fixed;
   margin-left: 0;
@@ -24,26 +34,26 @@ h3 {
   width: 250px;
 }
 
-.text h1 {
+.text .h1 {
   font-size: 3rem;
   font-weight: 800;
   letter-spacing: 0.1rem;
 }
 
-.text h2 {
+.text .h2 {
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
 }
 
-.text h3 {
+.text .h3 {
   font-size: 1rem;
   font-weight: 200;
 }
 
 /* to hide description tex on short phones */
-@media (max-height: 642px) {
-  .text h3 {
+@media (max-height: 600px) {
+  .text .h3 {
     display: none;
   }
 }
@@ -53,7 +63,7 @@ h3 {
     width: 600px;
     /* margin-left: -40px; */
   }
-  .text h1 {
+  .text .h1 {
     margin-bottom: 20px;
     font-size: 4rem;
   }
@@ -64,15 +74,15 @@ h3 {
     bottom: 15%;
   }
 
-  .text h1 {
+  .text .h1 {
     width: 900px;
   }
 
-  .text h2 {
+  .text .h2 {
     width: 700px;
   }
 
-  .text h3 {
+  .text .h3 {
     width: 600px;
     padding: 20px;
     line-height: 1.3rem;
@@ -82,7 +92,5 @@ h3 {
 @media (min-width: 1300px) {
   .text {
     margin-left: -50px;
-  }
-  .text h1 {
   }
 }

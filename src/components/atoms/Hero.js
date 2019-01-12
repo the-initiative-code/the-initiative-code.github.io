@@ -39,11 +39,13 @@ const AnimatedText = ({ interval = 5 }) => {}
 const HeroText = () => (
   <div className={styles.default}>
     <div className={styles.text}>
-      <h1>We build websites.</h1>
-      <h2>We work with you to bring your digital presence to life.</h2>
-      <br />
-      <br />
-      <h3>
+      <h1 className={styles.h1}>We build websites.</h1>
+      <h2 className={styles.h2}>
+        We work with you to bring your digital presence to life.
+      </h2>
+      <div className={styles.break} />
+
+      <h3 className={styles.h3}>
         It's {moment().format('gggg')} and online experiences are more important
         than ever. Your Customers expect{' '}
         <NavA
