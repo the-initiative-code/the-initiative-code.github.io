@@ -1,5 +1,4 @@
 import Typography from 'typography'
-import grandViewTheme from 'typography-theme-grand-view'
 import MoragaTheme from 'typography-theme-moraga'
 
 const typography = new Typography(MoragaTheme)

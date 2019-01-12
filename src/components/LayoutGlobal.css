@@ -25,10 +25,8 @@
 }
 
 ::selection {
-  background: #ffea97; /* WebKit/Blink Browsers */
-  color: #ee3e6a;
+  background: rgba(12, 242, 150, 0.5); /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #ffea97; /* Gecko Browsers */
-  color: #ee3e6a;
+  background: rgba(12, 242, 150, 0.5); /* Gecko Browsers */
 }

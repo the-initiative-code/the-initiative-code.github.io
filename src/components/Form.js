@@ -6,6 +6,7 @@ import {
   MuiThemeProvider,
   createMuiTheme,
 } from '@material-ui/core/styles'
+import clr from '@material-ui/core/colors/amber'
 import TextField from '@material-ui/core/TextField'
 
 // styles
@@ -20,6 +21,9 @@ const theme = createMuiTheme({
     // fontFamily: "Arial",
     useNextVariants: true,
   },
+  palette: {
+    primary: clr,
+  },
 })
 
 const styles = theme => ({
@@ -31,7 +35,7 @@ const styles = theme => ({
   textField: {
     width: '100%',
     marginLeft: theme.spacing.unit,
-    marginRight: theme.spacing.unit,
+    marginRight: theme.spacing.unit + 10,
   },
   dense: {
     marginTop: 16,
@@ -87,7 +91,7 @@ class OutlinedTextFields extends React.Component {
             label="What are you selling?"
             multiline
             rows="4"
-            placeholder="Laptops and Mobile Devices"
+            placeholder="e.g. Laptops and Mobile Devices"
             className={classes.textField}
             margin="normal"
             variant="outlined"
@@ -98,7 +102,7 @@ class OutlinedTextFields extends React.Component {
             label="Who are your customers?"
             multiline
             rows="4"
-            placeholder="Oil and gas corporations"
+            placeholder="e.g. Oil and gas corporations"
             className={classes.textField}
             margin="normal"
             variant="outlined"
@@ -109,7 +113,7 @@ class OutlinedTextFields extends React.Component {
             label="What is your brand?"
             multiline
             rows="8"
-            placeholder="We offer customers value added contracts that include client care and conferencing capabilities."
+            placeholder="e.g. We offer customers devices with value added contracts that include client care and conferencing capabilities."
             className={classes.textField}
             margin="normal"
             variant="outlined"
@@ -117,10 +121,10 @@ class OutlinedTextFields extends React.Component {
           />
           <TextField
             id="outlined-multiline-static"
-            label="how may we call you?"
+            label="How may we call you?"
             multiline
             rows="1"
-            placeholder="your name"
+            // placeholder="your name"
             className={classes.textField}
             margin="normal"
             variant="outlined"
@@ -131,7 +135,7 @@ class OutlinedTextFields extends React.Component {
             label="please leave us your email."
             multiline
             rows="1"
-            placeholder="your email"
+            // placeholder="your email"
             className={classes.textField}
             margin="normal"
             variant="outlined"

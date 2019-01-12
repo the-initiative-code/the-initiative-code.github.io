@@ -22,11 +22,13 @@
 }
 
 .name {
+  box-shadow: none;
+  padding: 0;
 }
 
-.experience {
+/* .experience {
   padding: 0px 5px 60px 0px;
-}
+} */
 
 .descriptionDiv {
   display: flex;

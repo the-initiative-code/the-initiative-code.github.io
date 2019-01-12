@@ -32,9 +32,9 @@ const Layout = ({ children, current }) => (
           <div className={styles.mainBody}>
             <div className={frameStyle}>
               <div className={styles.innerDiv}>{children}</div>
-              <Footer height={170} selected={current} />
             </div>
           </div>
+          <Footer height={170} selected={current} />
         </>
       )
     }}

@@ -17,6 +17,7 @@
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.0.8",
     "gatsby-transformer-sharp": "^2.1.8",
+    "moment": "^2.23.0",
     "pixi.js": "^4.8.4",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",

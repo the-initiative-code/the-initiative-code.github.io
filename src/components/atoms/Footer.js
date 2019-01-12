@@ -9,7 +9,8 @@ import { rhythm, scale } from '../../utils/typography'
 import { NavLink } from './Link'
 
 const Footer = ({ selected }) => {
-  if (selected !== '/contact') {
+  console.log(selected)
+  if (selected !== 'home' && selected !== '/contact') {
     return (
       <div className={styles.footer + ' footer-global'}>
         <div className={styles.footerBar}>

@@ -13,7 +13,7 @@ const Navbar = ({ selected }) => {
     <div className={styles.navbar}>
       <NavLink
         href="/projects"
-        text="Our work"
+        text="Our works"
         type="header"
         selected={selected}
       />

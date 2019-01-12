@@ -16,8 +16,10 @@ const PageTemplate = () => (
     <SEO title="contact us" keywords={['contact', 'email', 'reach out']} />
 
     <div className={style.frame}>
-      <h1>Contact</h1>
-      <p className={style.topic}>Tell us your ideal website</p>
+      <h1 className={style.title}>Contact Us</h1>
+      <p className={style.description}>
+        Tell us your ideal website, and we will get back to you shortly.
+      </p>
       <Form onSubmit={e => console.log(e)} />
     </div>
   </Layout>

@@ -1,10 +1,12 @@
 // main imports
 import React from 'react'
+import moment from 'moment'
 
 // styles
 import styles from './Hero.module.css'
 
 // components
+import { NavLink, NavA } from './Link'
 
 const heroContent = [
   {
@@ -26,6 +28,12 @@ const heroContent = [
   },
 ]
 
+const LINK_SHOPPER =
+  'https://www.thinkwithgoogle.com/intl/en-cee/advertising-channels-tools/mobile/four-insights-how-shoppers-use-apps-and-mobile-sites/'
+
+const LINK_CONSUMER =
+  'https://www.thinkwithgoogle.com/advertising-channels/mobile-marketing/consumer-behavior-mobile-digital-experiences/'
+
 const AnimatedText = ({ interval = 5 }) => {}
 
 const HeroText = () => (
@@ -36,13 +44,37 @@ const HeroText = () => (
       <br />
       <br />
       <h3>
-        here's another text description convincing you with some data to part
-        your hard earned money in order to invest in the future of your company
-        or brand.
+        It's {moment().format('gggg')} and online experiences are more important
+        than ever. Your Customers expect{' '}
+        <NavA
+          href={LINK_CONSUMER}
+          text="personalized"
+          type="header"
+          selected={LINK_CONSUMER}
+          style={{ fontWeight: 600, fontSize: '1em' }}
+        />
+        ,{' '}
+        <NavA
+          href={LINK_SHOPPER}
+          text="fast"
+          type="header"
+          selected={LINK_SHOPPER}
+          style={{ fontWeight: 600, fontSize: '1em' }}
+        />{' '}
+        website experiences, while you want them to understand your brand and
+        the value you bring to their lives.{' '}
+        <NavLink
+          href="/about"
+          text="This is where we come in."
+          type="header"
+          selected="/about"
+          style={{ fontWeight: 600, fontSize: '1em' }}
+        />
       </h3>
       {/* <code>hero text here, use absolute positioning</code>
       <code>
         in the future, I plan to animate the text based on the content behind
+        also a link to a related important chart
       </code>
       <code>content scroll behind, front text animates typewriter style</code> */}
     </div>

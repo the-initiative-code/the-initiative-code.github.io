@@ -11,11 +11,17 @@
   margin-left: -20px;
 }
 
-.text * {
+.text h1,
+h2,
+h3 {
   color: black;
   background-color: white;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.02);
   padding: 10px;
+}
+
+.text a p {
+  width: 250px;
 }
 
 .text h1 {

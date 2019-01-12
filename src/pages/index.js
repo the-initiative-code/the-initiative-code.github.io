@@ -21,9 +21,9 @@ const Showcase = props => (
 const IndexPage = props => (
   <Layout current="home">
     <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
+    <Hero />
 
     <div className={style.home}>
-      <Hero />
       <Showcase
         showcase={<Img fluid={props.data.nest.childImageSharp.fluid} />}
         client="The Nest, 2018"
@@ -50,9 +50,7 @@ const IndexPage = props => (
 
 export default IndexPage
 
-{
-  /* The code below queries images using gatsby-images */
-}
+/* The code below queries images using gatsby-images */
 export const showcaseImage = graphql`
   fragment showcaseImage on File {
     childImageSharp {
@@ -77,7 +75,7 @@ export const pageQuery = graphql`
     prng: file(relativePath: { eq: "ourwork/prng.png" }) {
       ...showcaseImage
     }
-    nest: file(relativePath: { eq: "ourwork/the-nest.png" }) {
+    nest: file(relativePath: { eq: "ourwork/nest.png" }) {
       ...showcaseImage
     }
   }
