@@ -113,5 +113,8 @@ export const pageQuery = graphql`
     nest: file(relativePath: { eq: "ourwork/nest.png" }) {
       ...fluidImage
     }
+    bluebottle: file(relativePath: { eq: "ourwork/bluebottle.png" }) {
+      ...fluidImage
+    }
   }
 `

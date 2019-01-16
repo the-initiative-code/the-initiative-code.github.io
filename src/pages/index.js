@@ -29,6 +29,10 @@ const IndexPage = props => (
         client="The Nest, 2018"
       />
       <Showcase
+        showcase={<Img fluid={props.data.bluebottle.childImageSharp.fluid} />}
+        client="Bluebottle, 2019"
+      />
+      <Showcase
         showcase={<Img fluid={props.data.hourtrip.childImageSharp.fluid} />}
         client="HourTrip, 2019"
       />
@@ -76,6 +80,9 @@ export const pageQuery = graphql`
       ...showcaseImage
     }
     nest: file(relativePath: { eq: "ourwork/nest.png" }) {
+      ...showcaseImage
+    }
+    bluebottle: file(relativePath: { eq: "ourwork/bluebottle.png" }) {
       ...showcaseImage
     }
   }
