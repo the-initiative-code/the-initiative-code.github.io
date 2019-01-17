@@ -74,11 +74,11 @@ const HeroText = () => (
         />{' '}
         come in.{' '}
         <NavLink
-          href="/pricing"
+          href="/projects"
           text="Check out some of our works."
           type="header"
-          selected="/pricing"
-          style={{ fontWeight: 600, fontSize: '1em' }}
+          selected="/projects"
+          style={{ fontWeight: 800, fontSize: '1em' }}
         />
       </h3>
       {/* <code>hero text here, use absolute positioning</code>
