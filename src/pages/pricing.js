@@ -25,7 +25,7 @@ const PageTemplate = () => (
         <br />
         <h5>For how much :</h5>
         <p>
-          100 USD<span className="text-highlight">*</span>
+          300 USD<span className="text-highlight">*</span>
         </p>
         <br />
         <h5>What will you get :</h5>
