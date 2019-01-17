@@ -67,7 +67,7 @@ const HeroText = () => (
         the value you bring to their lives. This is where{' '}
         <NavLink
           href="/about"
-          text="we."
+          text="we"
           type="header"
           selected="/about"
           style={{ fontWeight: 600, fontSize: '1em' }}
